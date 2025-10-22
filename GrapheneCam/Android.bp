@@ -1,0 +1,12 @@
+android_app_import {
+	name: "GrapheneCam",
+	owner: "graphene",
+	apk: "GrapheneCam.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+	overrides: ["Aperture", "Aperture_prebuilt", "Camera2", "Snap"],
+}
