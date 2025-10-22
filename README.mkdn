@@ -8,12 +8,12 @@
 
 ### Build the service
 
-- Clone the repository in system/extras
+- Clone the repository in vendor/extras
 
 - Add this soong namespace:
 
 ```
-PRODUCT_SOONG_NAMESPACES += system/extras
+PRODUCT_SOONG_NAMESPACES += vendor/extras
 ```
 
 - Add the prebuilt package you want:
@@ -25,14 +25,14 @@ PRODUCT_PACKAGES += GrapheneCam
 If your device has an auxiliary camera, instead of the package, select the makefile:
 
 ```
-$(call inherit-product, system/extras/configs/GrapheneCam.mk)
+$(call inherit-product, vendor/extras/configs/GrapheneCam.mk)
 ```
 
 or to get logs from the device, include:
 
 ```
 # ADB logs
-$(call inherit-product, system/extras/configs/logs.mk)
+$(call inherit-product, vendor/extras/configs/logs.mk)
 ```
 
 and enjoy!
