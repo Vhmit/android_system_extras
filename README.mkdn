@@ -19,7 +19,13 @@ PRODUCT_SOONG_NAMESPACES += system/extras
 - Add the prebuilt package you want:
 
 ```
-PRODUCT_PACKAGES += SimpleGallery
+PRODUCT_PACKAGES += GrapheneCam
+```
+
+If your device has an auxiliary camera, instead of the package, select the makefile:
+
+```
+$(call inherit-product, system/extras/configs/GrapheneCam.mk)
 ```
 
 or to get logs from the device, include:
