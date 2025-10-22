@@ -8,4 +8,18 @@
 
 ### Build the service
 
-- Clone the repository: system/extras
+- Clone the repository in system/extras
+
+- Add this soong namespace:
+
+```
+PRODUCT_SOONG_NAMESPACES += system/extras
+```
+
+- Add the prebuilt package you want:
+
+```
+PRODUCT_PACKAGES += SimpleGallery
+```
+
+and enjoy!
