@@ -22,4 +22,11 @@ PRODUCT_SOONG_NAMESPACES += system/extras
 PRODUCT_PACKAGES += SimpleGallery
 ```
 
+or to get logs from the device, include:
+
+```
+# ADB logs
+$(call inherit-product, system/extras/configs/logs.mk)
+```
+
 and enjoy!
